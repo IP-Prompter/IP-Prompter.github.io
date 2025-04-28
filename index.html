@@ -191,17 +191,18 @@
         <div class="content has-text-justified">
           <p>
           <p>Theme-specific images (TSIs) are visuals that combine characters, objects, and environments under a unified style or story. They are essential for branding, storytelling, and design.</p>
-          <p>While text-to-image models have advanced, generating TSIs is harder than customizing a single object — it requires managing multiple elements like characters and backgrounds. Existing methods (fine-tuning, control networks, attention exchange) are slow, costly, and often break character consistency.</p>
-          <p>Inspired by large language models that flexibly use context, we bring the idea of text prompt engineering into image generation. We introduce a visual prompting framework that stitches guiding images directly into the input — no extra training or model changes needed. This keeps guidance accurate, efficient, and visually consistent.</p>
-          <p>To improve flexibility, we propose Dynamic Visual Prompting (DVP): </p>
+          <p>While text-to-image models have advanced, generating TSIs is harder than customizing a single object — it requires managing <strong>multiple elements</strong> like characters and backgrounds. Existing methods (fine-tuning, control networks, attention exchange) are time- or data-costly and may break character consistency.</p>
+          <p>Inspired by large language models that flexibly use context, we bring the idea of text prompt engineering into image generation. We introduce a visual prompting framework that forms guiding images into an image grid directly as the input — no extra training or model changes needed. This keeps guidance accurate, efficient, and visually consistent.</p>
+          <p>To improve flexibility, we propose <strong>Dynamic Visual Prompting (DVP)</strong>: </p>
           <ul>
-              <li>It analyzes user text, matches visual elements, and arranges them automatically.</li>
-              <li>It updates prompts dynamically based on user instructions.</li>
+              <li>It <strong>analyzes</strong> user text, <strong>matches</strong> visual elements, and <strong>arranges</strong> them automatically.</li>
+              <li>It can switch between characters and themes seamlessly based on user instructions.</li>
           </ul>
-          <p>Our full system, called IP-Prompter, achieves state-of-the-art TSI generation:</p>
+          <p>Our full system, called <strong>IP-Prompter</strong>, achieves state-of-the-art TSI generation:</p>
           <ul>
               <li>Training-free, modification-free, and highly flexible.</li>
               <li>Supports creative tasks like story generation, character design, and style-guided creation.</li>
+          </ul>
           </ul>
           </p>
         </div>
