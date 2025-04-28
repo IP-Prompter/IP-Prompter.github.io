@@ -195,17 +195,15 @@
           <p>Inspired by large language models that flexibly use context, we bring the idea of text prompt engineering into image generation. We introduce a visual prompting framework that forms guiding images into an image grid directly as the input — no extra training or model changes needed. This keeps guidance accurate, efficient, and visually consistent.</p>
           <p>To improve flexibility, we propose <strong>Dynamic Visual Prompting (DVP)</strong>: </p>
           <ul>
-              <li>It <strong>analyzes</strong> user text, <strong>matches</strong> visual elements, and <strong>arranges</strong> them automatically.</li>
+              <li>It <strong>analyzes</strong> user text, <strong>matches</strong> visual elements, <strong>self-updates</strong> the grid arrangements, and <strong>evaluates</strong> them automatically.</li>
               <li>It can switch between characters and themes seamlessly based on user instructions.</li>
           </ul>
           <p>Our full system, called <strong>IP-Prompter</strong>, achieves state-of-the-art TSI generation:</p>
           <ul>
               <li>Training-free, modification-free, and highly flexible.</li>
               <li>Supports creative tasks like story generation, character design, and style-guided creation.</li>
-          </ul>
-          <ul>  
-          <p>IP-Prompter generates strong results with 15 diverse images per character and excels with 30.</p>
-          <p>The matching and evaluation process take about 10 seconds. The synthesis process takes about 30 seconds for a $512\times 512$ image, which is comparable with baseline training-free methods</p>
+              <li>IP-Prompter generates strong results with 15 diverse images per character and excels with 30.</li>
+              <li>The matching and evaluation process take about 10 seconds. The synthesis process takes about 30 seconds for a $512\times 512$ image, which is comparable with baseline training-free methods</li>
           </ul>
           </p>
         </div>
