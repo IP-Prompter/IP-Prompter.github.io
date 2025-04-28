@@ -161,24 +161,6 @@
 <!-- End paper abstract -->
 
   
-<!-- motivation-->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-        <h2 class="title is-3">Limitations of Existing Methods</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <p>
-            With the advent of text-to-image generation models, users can now synthesize images from text prompts. While existing personalized methods, such as model fine-tuning, integration of auxiliary control networks, and attention exchange mechanisms, have made progress in generating specific concepts, they still fall short when dealing with the diversity and complexity of TSIs. For instance, fine-tuning approaches struggle with rapid concept switching and incur high computational and time costs. Methods relying on auxiliary networks or attention mechanisms often fail to maintain the identity consistency of characters and objects and require structural modifications to large pre-trained models, adding further complexity.
-          </p>
-        </div>
-         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End motivation-- -->
   
 <!-- motivation-->
 <section class="hero is-small">
@@ -193,6 +175,37 @@
         <h2 class="subtitle has-text-centered">
         Pipeline of IP-Prompter: Dynamic visual prompting (DVP) includes three key stages: (1) Comprehending user intent and extracting key elements; (2) Matching and generating visual prompts; and (3) Updating and evaluating prompts through self-consistency. This way (4) DVP enables effortless transition between diverse creative subjects, thereby enhancing the flexibility and efficiency of content generation.
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End motivation-- -->
+
+  
+<!-- motivation-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+          <p>Theme-specific images (TSIs) are visuals that combine characters, objects, and environments under a unified style or story. They are essential for branding, storytelling, and design.</p>
+          <p>While text-to-image models have advanced, generating TSIs is harder than customizing a single object — it requires managing multiple elements like characters and backgrounds. Existing methods (fine-tuning, control networks, attention exchange) are slow, costly, and often break character consistency.</p>
+          <p>Inspired by large language models that flexibly use context, we bring the idea of text prompt engineering into image generation. We introduce a visual prompting framework that stitches guiding images directly into the input — no extra training or model changes needed. This keeps guidance accurate, efficient, and visually consistent.</p>
+          <p>To improve flexibility, we propose Dynamic Visual Prompting (DVP): </p>
+          <ul>
+              <li>It analyzes user text, matches visual elements, and arranges them automatically.</li>
+              <li>It updates prompts dynamically based on user instructions.</li>
+          </ul>
+          <p>Our full system, called IP-Prompter, achieves state-of-the-art TSI generation:</p>
+          <ul>
+              <li>Training-free, modification-free, and highly flexible.</li>
+              <li>Supports creative tasks like story generation, character design, and style-guided creation.</li>
+          </ul>
+          </p>
+        </div>
+         </div>
       </div>
     </div>
   </div>
